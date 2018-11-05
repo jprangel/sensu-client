@@ -1,0 +1,15 @@
+{
+         "client": {
+         "name": "HOST_NAME",
+           "address": "HOST_IP",
+           "subscriptions": [ ],
+           "keepalive": {
+           "handler": "mailer",
+             "thresholds": {
+           "warning": 250,
+           "critical": 300
+             },
+             "refresh": 90
+           }
+         }
+}

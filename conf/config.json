@@ -1,0 +1,10 @@
+{
+         "rabbitmq": {
+           "host": "rabbitmq.copiloto.cloud.local",
+           "vhost": "/sensu",
+           "user": "sensu",
+           "port": 5671,
+           "password": "sensupass"
+         }
+}
+
