@@ -14,7 +14,7 @@ sudo chkconfig sensu-client on
 echo "Update the configuration"
 sudo cp conf/config.json /etc/sensu/conf.d/
 sudo cp conf/client.json /etc/sensu/conf.d/
-HOSTNAME=$(curl http://169.254.169.254/latest/meta-data/hostname)
+HOSTNAME=$(curl http://169.254.169.254/latest/meta-data/security-groups/)
 LOCAL_IP=$(curl http://169.254.169.254/latest/meta-data/local-ipv4)
 sudo sed s/HOST_NAME/$HOSTNAME/g /etc/sensu/conf.d/client.json -i
 sudo sed s/HOST_IP/$LOCAL_IP/g /etc/sensu/conf.d/client.json -i
