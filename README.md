@@ -15,5 +15,5 @@ sh install.sh -t docker
 ```
 Execute the script to install on EC2:
 ```
-sh install.sh -t EC2
+sh install.sh -t ec2
 ```
